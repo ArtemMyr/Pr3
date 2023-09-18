@@ -4,12 +4,25 @@
     box-sizing: border-box;
 }
 
+@keyframes background-spin{
+    from{
+      background-position:  0% center;
+    }
+        
+    
+    to{
+      background-position: -200% center ;
+    }
+  }
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: var(--body-color);
+    background: linear-gradient(to right, #7758D1 0%, #F7CBFD 50%,#7758D1 100% );
+    background-size: 200%;
+    animation: background-spin 30s linear infinite;
 }
 
 .box {
@@ -28,7 +41,7 @@ body {
     width: 380px;
     height: 500px;
     transform-origin: bottom right;
-    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    background: linear-gradient(0deg, transparent, #fff, #fff);
     animation: animate 6s linear infinite;
 }
 .box::after {
@@ -39,7 +52,7 @@ body {
     width: 380px;
     height: 500px;
     transform-origin: bottom right;
-    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    background: linear-gradient(0deg, transparent, #fff, #fff);
     animation: animate 6s linear infinite;
     animation-delay: -3s;
 }
@@ -57,14 +70,14 @@ body {
     inset: 2px;
     border-radius: 8px;
     position: absolute;
-    background: #28292d;
+    background: #1D203E;
     z-index: 10;
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
 }
 .form h2 {
-    color: #45f3ff;
+    color: #FFF;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1em;
@@ -88,7 +101,7 @@ body {
 }
 .input-box input:valid ~ span,
 .input-box input:focus ~ span {
-    color: #45f3ff;
+    color: #fff;
     transform: translateY(-34px);
     font-size: 0.75em;
 }
@@ -110,7 +123,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: #45f3ff;
+    background: #fff;
     border-radius: 4px;
     transition: var(--tran-05);
     pointer-events: none;
@@ -133,13 +146,13 @@ body {
 }
 .links a:hover,
 .links a:nth-child(2) {
-    color: #45f3ff;
+    color: #fff;
 }
 
 input[type="submit"] {
     border: none;
     outline: none;
-    background: #45f3ff;
+    background: #fff;
     padding: 11px 25px;
     width: 100px;
     margin-top: 10px;
