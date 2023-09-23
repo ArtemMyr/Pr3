@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', serif;
+}
+body{
+    background: radial-gradient(103.89% 121.8% at 34.94% 108.33%, #F7CBFD 0%, #7758D1 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.container{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.current-track, .track_list{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    background: #2C2F48;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.audio_player,
+.audio_player_btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.audio_player_track img{
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 75px;
+}
+
+.audio_player_track{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    align-items: center;
+}
+
+.current-track .track_props {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.current-track .wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.volume1 hr{
+    width: 50px;
+}
+
+.volume1,
+.add_track,
+.loop,
+.audio_player img{
+    margin: 0 10px;
+}
+
+.current-track .track_props .name,
+.current-track .track_props .author,
+.current-track .track_props .time{
+    font-size:16px;
+    color: #fff;
+    margin: 5px 0;
+}
+.current-track .track_props .author{
+    color: #817B7B;
+}
+
+.current-track .track_props hr{
+    margin-top: 10px;
+}
+
+.track_list{
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+}
+
+.track_list .search input{
+    width: 100%;
+    background: none;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid #8b8d9b;
+    border-radius: 16px;
+}
+.track_list .search input:focus{
+    outline: none;
+}
+
+.track_list .search img{
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 45%; 
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    user-select: none;
+    pointer-events: none;
+}
+
+
+
+.wrapper{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.volume{
+  -moz-appearance: none;
+  height: 5px;
+  width: 1000px;
+  border-radius:3px;
+  -webkit-appearance: none; 
+  appearance: none; 
+  background: linear-gradient(to right, #fff 0%, #fff 50%, #686868 50%, #686868 100%);
+}
+.volume::-moz-range-thumb {
+  opacity: 0;
+}
+.volume::-webkit-slider-thumb {
+  
+  opacity: 0;
+}
+.volume:active::-webkit-slider-runnable-track {
+    height: 7px; 
+    border-radius:7px;
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5); 
+ }  
+.volume:active::-moz-range-progress {
+  height: 7px;
+  background-color: #fff;
+  border-radius:7px;
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+  appearance: none;
+}
+
+
+
+.track_list .search{
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.track_list .list{
+    width: 80%;
+    
+}
+.track_list .list .item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background: #323761;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+
+.track_list .list .item:hover{
+    background: #1f2349;
+}
+
+.track_list .list .item .wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.track_list .list .item .track_props{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.track_list .list .item .track_props :is(.name,.time,.author){
+    font-size:16px;
+    color: #fff;
+}
+.track_list .list .item .track_props .author{
+    color: #817B7B;
+    font-size: 14px;
+}
+.track_list .list .item .track_props .time{
+    font-size: 14px;
+
+}
+
+.track_list .list .item img{
+    margin-right: 10px;
+}
+
+
+.track_list img{
+    pointer-events: none;
+    user-select: none;
+}

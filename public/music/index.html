@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Music</title>
+</head>
+<body>
+    <div class="container">
+        <div class="current-track">
+            <div class="audio_player">
+                <img id="play" src="img/play.png" alt="">
+                <img class="left-arrow" src="img/left.png" alt="" id="left">
+                <img class="right-arrow" src="img/right.png" alt="" id="right">              
+            </div>
+            <div class="audio_player_track">
+                <img src="" alt="">
+                <div class="track_props">
+                    <p class="name">
+                        
+                    </p>
+                    <div class="wrap">
+                        <p class="author">
+                            
+                        </p>
+                        <p class="time">
+                            
+                        </p>
+                    </div>
+                    <div class="wrapper">
+                        <input type="range" name="" id="" class="volume" min="0" max="100" value="0" oninput="getProgressBar()">
+                         
+                      </div>
+                </div>
+            </div>
+            <div class="audio_player_btns">
+                    <div class="volume1">
+                        <hr>
+                    </div>
+                <div class="add_track">
+                    <img src="img/add.png" alt="">
+                </div>
+                <div class="loop">
+                    <img src="img/loop.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="track_list">
+            <div class="search">
+                <img src="img/search.png" alt="">
+                <input type="text" placeholder="Explore">
+            </div>
+            <div class="list">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/audio-player.js"></script>
+</body>
+</html>
