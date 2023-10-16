@@ -20,9 +20,6 @@ form.addEventListener('submit', (e) => {
     users.password = passwordUser;
 
     if (form.username.value && form.password.value && form.repeatpassword && form.password.value == form.repeatpassword.value){
-        if () {
-            
-        }
         fetch('/test', {
             method: 'POST',
             headers: {
@@ -52,7 +49,7 @@ form.addEventListener('submit', (e) => {
 // const form = document.getElementById('register-form');
 // form.onsubmit = () => {
 //     event.preventDefault();
-//     //Получаем значения из формы
+    //Получаем значения из формы
 //     const username = form.elements.username.value;
 //     const password = form.elements.password.value;
 
